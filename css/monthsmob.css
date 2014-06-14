@@ -1,0 +1,541 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+.sorry {
+	position: absolute;
+	top: 240px;
+	left: 250px;
+	
+}
+.unselectable {
+	-webkit-user-select: none;  
+	-khtml-user-select: none;   
+	-moz-user-select: none; 
+	-o-user-select: none;    
+	user-select: none; }
+
+body {
+    font-size: 12px;
+    line-height: 1.231;
+    margin: 0;
+	background-color:#000;
+	padding:0;
+}
+body, button, input, select, textarea {
+    color: #999;
+    font-family: sans-serif;
+}
+
+a {
+    color:#CFF;
+		text-decoration:none;
+}
+a:visited {
+     color:#CFF;
+}
+a:focus {
+     color:#CFF;
+	text-decoration:none;
+	
+}
+a:hover, a:active {
+	 color:#CFF;
+	text-decoration:none;
+
+}
+
+
+/*initial overlay to hide stuff while sorting */
+.blackscreen{
+	position: absolute;
+	width:  880px;
+	height: 800px;
+	top: 0px;
+	background-color:#000;
+	z-index: 300; /*stacking order higher number is at top*/
+}
+
+
+.monthstitle{
+	width: 99px;
+	height: 31px;
+	right: 240px;
+	top: 15px;
+	position:absolute;
+	padding:10;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+	font-weight:400;
+	color:#CCC;
+	text-align:right;
+	z-index:2006;
+}
+
+/*preloader text*/
+.loadercontent {
+	position: absolute;
+	width:  0px;
+	height: 8px;
+	z-index: 2006;
+	background-color:#CCC;
+}
+.loaderhold {
+	position: absolute;
+	width:  200px;
+	height: 8px;
+	font-size:8px;
+	z-index: 2005;
+	background-color:#009;
+}
+
+.mrcage {
+			font-size: 22px;
+			color:#FFF;
+}
+.loadite {
+	position: absolute;
+	width:  200px;
+	height: 10px;
+	top: 280px;
+}
+
+.photocredit {
+	color:#999;
+	font-size:8px:
+	
+}
+
+.authortitle1, .authortitle2, .authortitle3{
+	position: absolute;
+	height: 25px;
+	width: 500px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:100;
+	vertical-align: middle;
+	display:none;
+	z-index: 2005;
+}
+
+.authortitle1 {
+	top: 15px;
+	line-height:30px;
+	font-size:28px;
+	color:#fff;
+
+}
+.authortitle2 {
+	top: 45px;
+		line-height:20px;
+font-size:16px;
+		color:#ccc;
+
+}
+.authortitle3 {
+	top: 65;
+	font-size:16px;
+}
+.moreinfodiv1, .moreinfodiv2, .moreinfodiv3 {
+	position: absolute;
+	height: 25px;
+	width: 700px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	font-weight:100;
+	vertical-align: middle;
+	color:#9CC;
+	z-index: 2006;
+}
+
+
+.moreinfodivA, .moreinfodivB {
+	position: absolute;
+
+	width: 550px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	font-weight:100;
+	vertical-align: middle;
+	color:#CCC;
+
+	display:none;
+	z-index: 2006;
+}
+
+
+
+.cageclassbg {
+	position: absolute;
+	width:  880px;
+	height: 800px;
+	top: 0px;
+	background-color:#000;
+	z-index: 2004; /*stacking order higher number is at top*/
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	color:#999;
+}
+
+.cageclass {
+	position: absolute;
+	width:  550px;
+	height: 260px;
+	top: 146px;
+	background-color:#000;
+	padding: 5px;
+	display:none;
+	z-index: 2010; /*stacking order higher number is at top*/
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:13px;
+	color:#999;
+	overflow: visible;
+}
+.moreinfodiv1 {
+		top: 120px;
+}
+.moreinfodiv2 {
+		top: 150px;
+}
+.moreinfodiv3 {
+		top: 180px;
+}
+.go {
+	position: absolute;
+	width:  50px;
+	height: 56px;
+	margin: 0px auto;
+	font-family:Tahoma, Geneva, sans-serif;
+	font-size:50px;
+	font-weight:lighter;
+	color:#FFF;
+	vertical-align: middle;
+	line-height:51px;
+	filter:Alpha(opacity=70);
+	-moz-opacity:0.7;
+	opacity:0.7;
+	display:none;
+	z-index: 2005;
+}
+.go {
+	top: 85px;
+
+}
+
+.moreinfodivA {
+		top: 230px;
+		height: 30px;
+}
+.moreinfodivB {
+		top: 340px;
+		height: 100px;
+}
+
+.buttonsinfodiv {
+	position: absolute;
+	width: 300px;
+	height: 70px;
+	top: 280px;
+	cursor:pointer;
+	display:none;
+	z-index: 2006;
+}
+
+.abutton1, .abutton2, .abutton3, .abutton4 {
+	position: absolute;
+}
+.abutton1 {
+	left: 15px;
+}
+.abutton2 {
+	left: 85px;
+}
+.abutton3 {
+	left: 155px;
+}
+.abutton4 {
+	left: 225px;
+}
+
+
+.problems {
+	top:565px;
+	width: 390px;
+	height:28px;
+	font-size:12px;
+	color:#C33;
+	z-index: 2005;
+	vertical-align:middle;
+}
+.thankyou {
+	top:605px;
+	width: 160px;
+	height:14px;
+	font-size:12px;
+	color:#999;
+	z-index: 2005;
+	vertical-align:middle;
+}
+
+.thankyoudiv {
+	width: 300px;
+	top:632px;
+	height:18px;
+	font-size:12px;
+	z-index: 2005;
+	vertical-align:middle;
+	color:#999;
+}
+.textbg, .shapebg {
+	position: absolute;
+	width: 880px;
+	height: 600px;
+	top: 10px;
+}
+.bgcontentdiv,.bgcoverplate1, .bgcoverplate2{
+	position: absolute;
+	width: 880px;
+	height: 600px;
+	top: 10px;
+	overflow: hidden;
+}
+
+
+.tope {
+	position: absolute;
+	width: 880px;
+	height: 20px;
+	top: 10px;
+}
+
+.bottome {
+	position: absolute;
+	width: 880px;
+	height: 30px;
+	top: 580px;
+}
+
+.appletcontent
+{
+	position: absolute;
+	width: 950px;
+	height: 600px;
+	top: 3px;
+
+}
+
+ applet:focus { outline: none; -moz-outline-style: none; } 
+.appletcontent {
+	z-index: 13;
+}
+
+.textlayer {
+	position: absolute;
+	width: 450px;
+	padding: 25px;
+	height: 500px;
+	top: 110px;
+	font-family:Verdana, Geneva, sans-serif;
+	line-height:20px;
+	font-size: 14px;
+	color:#CCC;
+	font-weight:100;
+	z-index: 12; /*div can be above bg pics but must be below applet*/
+	display: none;
+}
+
+.bgcoverplate1 {
+	z-index: 11;
+}  
+
+
+.textbg {
+	background-color:#009;
+	z-index: 8; /*div can be above bg pics but must be below applet...*/
+	display: none;
+}
+.shapebg {
+	background-color:#630;
+	z-index: 9; /*div can be above bg pics but must be below applet...*/
+	display: none;
+}
+.bgcoverplate2 {
+	z-index: 6;
+}
+
+.bgcontentdiv {
+	z-index: 5;
+	background-color:#000;
+}
+
+	
+#bgcontent img { display: none }
+#bgcontent img.first { display: block }
+/*overlay that darkens the images - coz putting alpha on the tween div itself caused stutter*/
+
+.monthsstrip{
+	width: 880px;
+	height: 55px;
+	left:10px;
+	position:absolute;
+	filter:Alpha(opacity=90);
+	-moz-opacity:0.9;
+	opacity:0.9;
+	background-color:#000;
+	z-index:101;
+}
+
+.moreinfodivbg {
+	width: 880px;
+	height: 55px;
+	left:10px;
+	position:absolute;
+	background-color:#000;
+	z-index: 2000;
+}
+
+.buttons {
+	position:absolute;
+	width: 190px;
+	height: 27px;
+	top: 6px;
+	right: 10px;
+	background-color:#69F;
+	filter:Alpha(opacity=55);
+	-moz-opacity:0.55;
+	opacity:0.55;
+	z-index:101;
+}
+.faderstrip {
+	position:absolute;
+	width: 190px;
+	height: 14px;
+	top: 6px;
+	right: 10px;
+	z-index:101;
+}
+
+
+faderstrip:focus { outline: none; -moz-outline-style: none; } 
+
+
+#jan, #feb, #mar, #apr, #may, #jun, #jul, #aug, #sep, #oct, #nov, #dec{
+	position: absolute;
+	padding: 2px;
+	top:2px;
+	left: 15px;
+	z-index: 299;
+}
+
+a.monthroll img {
+filter:Alpha(opacity=55);
+-moz-opacity:0.55;
+opacity:0.55;
+border:none;
+}
+a.monthroll:hover img {
+filter:Alpha(opacity=100);
+-moz-opacity:1.0;
+opacity:1.0;
+border:none;
+}
+
+#words0 {
+	position: absolute;
+	width: 171px;
+	left: 0px;
+	top: 38px;
+	height: 51px;
+}
+#words1 {
+	position: absolute;
+	width: 304px;
+	left:46px;
+	top: 265px;
+	height: 75px;
+}
+#words2 {
+	position: absolute;
+	width: 172px;
+	left:82px;
+	top: 153px;
+	height: 53px;
+}
+#words3 {
+	position: absolute;
+	width: 309px;
+	left:423px;
+	top: 286px;
+	height: 82px;
+}
+#words4 {
+	position: absolute;
+	width: 256px;
+	left:21px;
+	top: 385px;
+	height: 57px;
+}
+#words5 {
+	position: absolute;
+	width: 292px;
+	left:436px;
+	top: 97px;
+	height: 62px;
+}
+#words6 {
+	position: absolute;
+	width: 367px;
+	left:341px;
+	top: 471px;
+	height: 76px;
+}
+#jan, #janbg  {
+	left:0px;
+	background-color:#000;
+}
+#feb, #febbg {
+	left:55px;
+	background-color:#000;
+}
+#mar, #marbg {
+	left:110px;	background-color:#000;
+
+}
+#apr , #aprbg{
+	left:165px; 	background-color:#000;
+
+}
+#may, #maybg {
+	left:220px;	background-color:#000;
+
+}
+#jun, #junbg {
+	left:275px;	background-color:#000;
+
+}
+
+#jul, #julbg {
+	left:330px;	background-color:#000;
+
+}
+#aug, #augbg {
+	left:385px;	background-color:#000;
+
+}
+#sep, #sepbg {
+	left:440px;	background-color:#000;
+
+}
+#oct, #octbg {
+	left:495px;	background-color:#000;
+
+}
+#nov, #novbg {
+	left:550px;	background-color:#000;
+
+}
+#dec, #decbg {
+	left:605px;	background-color:#000;
+
+}
